@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Corona Virus articls</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://github.com/downloads/lafeber/world-flags-sprite/flags32.css" />
+    </link>
+</head>
+
+<body class="m-10">
+    <div class="col-span-1 m-3">
+        <div class="flex justify-center flex-col md:flex-row md:place-content-evenly">
+            <div class="col-span-6 sm:col-span-1">
+                <label for="start_date" class="block text-sm font-medium leading-6 text-gray-900">Start Date</label>
+                <input class="block w-full rounded-none rounded-r-md border-0 py-1.5 px-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 " type="date" id="start_date" placeholder="Start date">
+            </div>
+            <div class="col-span-6 sm:col-span-1">
+                <label for="end_date" class="block text-sm font-medium leading-6 text-gray-900">End Date</label>
+                <input class="block w-full rounded-none rounded-r-md border-0 py-1.5 px-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" type="date" id="end_date" placeholder="End date">
+            </div>
+            <div class="col-span-6 sm:col-span-1">
+                <label for="submit" class="block text-sm font-medium leading-6 text-transparent	 ">t</label>
+                <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-3  sm:mt-0" id="submit">searsh</button>
+            </div>
+        </div>
+        <div class="flex justify-center flex-col md:flex-row md:place-content-evenly">
+            <p id="error-msg" class="text-red-800"></p>
+        </div>
+    </div>
+    <div class=" grid grid-cols-1 gap-2 md:grid-cols-2">
+        <div class="col-span-2 flex justify-center "><h1 class="text-lg"><span id="number_of_articls"></span> articles from <span id="span_start_date"></span> to <span id="span_end_date"></span></h1></div>
+        <div class="col-span-2" id="article_by_date"></div>
+        <div class="container" id="frequency_of_authors"></div>
+        <!--<div class="" id="author_subjectivity_polarity"></div>-->
+        <div class="container" id="author_subjectivity_polarity_bubble"></div>
+        <div class="container" id="frequency_of_topics"></div>
+        <div class="container" id="word_cloud_of_topics"></div>
+        <div class="container col-span-2 text-center" id="dependency_wheel"></div>
+        <div class="container" id="frequency_of_counries"></div>
+        <div class="container" id="map_of_counries"></div>
+      </div>
+    
+    <script src="main.js"></script>
+</body>
+
+</html>
