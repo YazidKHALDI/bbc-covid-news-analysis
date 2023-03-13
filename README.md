@@ -1,7 +1,7 @@
 # BBC Covid news analysis  
 
 # Quickstart
-1. Clone repo `git clone https://github.com/YazidKHALDI/bbc-covid-news-analysis`
+1. Clone repo `git clone https://github.com/YazidKHALDI/bbc-covid-news-analysis.git`
 2. Run `cd bbc-covid-news-analysis`
 3. Run `python3.9 -m venv python_env; . python_env/bin/activate`
 4. Run `mkdir -p ./logs ./plugins`
